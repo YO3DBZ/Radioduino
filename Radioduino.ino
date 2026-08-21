@@ -36,7 +36,8 @@ int r = 0;
 int meniu_max = 9;
 String freq_str;
 
-
+// ai generated to change
+// broken when freq <<10 MHz
 String proc_string(String input) {
   // 1. Cut off the last 2 digits
   if (input.length() < 2) return ""; // Safety check
@@ -302,6 +303,7 @@ void setup() {
 }
 
 // 0 for no 1 for clockwise 2 for counterclockwise
+// ai generated to change
 int rotate(){
   // get the current elapsed time
   currentTime = millis();
@@ -343,13 +345,14 @@ int rotate(){
 
 void loop() {
   r = rotate();
-  //meniu render 
+  // enter in meniu 
   if (digitalRead(8)== LOW && vfo == true){
     while(digitalRead(8)== LOW){
     }
     vfo = false;
     meniu_update();
   }
+  //meniu render 
   if (vfo == false && r != 0 && modifying == false){
     if (r == 1){
       meniu++;
@@ -365,6 +368,7 @@ void loop() {
     }
     meniu_update();
   }
+  // ch freq by step
   if (vfo == true && r != 0){
     if (r == 1){
       ch_freq(true);
@@ -375,6 +379,7 @@ void loop() {
   }
   //meniu logic
   if(vfo == false){
+    // exit meniu logic 
     if(meniu == 0){
       if (digitalRead(8)== LOW){
         while(digitalRead(8)== LOW){
@@ -383,7 +388,7 @@ void loop() {
       vfo_update();
       }
     }
-    // exit meniu logic 
+    // step select
     if (meniu == 1){
       if (digitalRead(8)== LOW){
         while(digitalRead(8)== LOW){
@@ -607,6 +612,7 @@ void loop() {
         meniu_update();
       }
     }
+    //bfo on off
     if(meniu == 8){
       if (digitalRead(8)== LOW){
         while(digitalRead(8)== LOW){
