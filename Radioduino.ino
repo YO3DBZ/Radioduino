@@ -45,7 +45,9 @@ String proc_string(String input) {
   
   // Ensure we have enough length left for the inserts (at least 6 characters)
   if (text.length() < 6) return text; 
-
+  while (text.length() < 7) {
+    text = "0" + text;
+  }
   int len = text.length();
   
   // 2. Extract sections based on positions from the back
@@ -56,8 +58,25 @@ String proc_string(String input) {
   // 3. Rebuild with the symbols inserted
   return part1 + "." + part2 +"," + part3;
 }
+void set_freq(unsigned long long f){
+  freq = f;
+  unsigned long long CLK0;
+  unsigned long long tempIF = freq_if1 + if_shift;
+  if (if1_enable == false){
+    CLK0 = freq;
+  }
+  if(if1_enable == true){
+    if(tempIF  <= freq){
+      CLK0 = freq - tempIF ;
+    }else{
+      CLK0 = tempIF  - freq;
+    }
+  }
+  si5351.set_freq(CLK0, SI5351_CLK0);
+  vfo_update();
+}
 void ch_freq(bool c){
-  unsigned long long CLK0 = freq;
+  unsigned long long CLK0;
   unsigned long long tempIF = freq_if1 + if_shift;
   if (c== false){
     freq = freq - step_size;
@@ -82,6 +101,7 @@ void ch_freq(bool c){
 }
 
 void vfo_update(){
+  lcd.clear();
   freq_str = int64String(freq); 
   freq_str = proc_string(freq_str);
   lcd.setCursor(0, 0);
@@ -115,7 +135,7 @@ void meniu_update(){
       break;
     //step
     case 1:
-      String text = int64String(step_size);
+      text = int64String(step_size);
       lcd.setCursor(0, 0);
       lcd.print("Step size");
       lcd.setCursor(14, 1);
@@ -684,6 +704,13 @@ void loop() {
         }
         break;
     }
+  }
+  //setting freq limits
+  if (freq <= 40000000ULL){
+    set_freq(50000000ULL);
+  }
+  if (freq >= 14700000000ULL){
+    set_freq(14600000000ULL);
   }
 }
 
