@@ -106,170 +106,174 @@ void bfo_update(){
 }
 void meniu_update(){
   lcd.clear();
-  //exit
-  if(meniu == 0){
-    lcd.setCursor(0,0);
-    lcd.print("Exit");
-  }
-  //step
-  if(meniu == 1){
-    String text = int64String(step_size);
-    lcd.setCursor(0, 0);
-    lcd.print("Step size");
-    lcd.setCursor(14, 1);
-    lcd.print("Hz");
-    lcd.setCursor(0, 1);
-    if (modifying == true){
-      lcd.print(">" + (text.substring(0, text.length() - 2)));
-    }else{
-      lcd.print(text.substring(0, text.length() - 2));
-    }
-  }
-  // mode 
-  if (meniu == 2){
-    lcd.setCursor(0, 0);
-    lcd.print("Mode");
-    lcd.setCursor(0, 1);
-    if(modifying == true){
-      if(mode ==1){
-        lcd.print(">USB");
-      }
-      if(mode ==2){
-        lcd.print(">LSB");
-      }
-      if(mode ==3){
-        lcd.print(">CW");
-      }
-    }
-    else
-    {
-      if(mode ==1){
-        lcd.print("USB");
-      }
-      if(mode ==2){
-        lcd.print("LSB");
-      }
-      if(mode ==3){
-        lcd.print("CW");
-      }
-    }
-  }
-  //if1 enable
-  if (meniu == 3){
-    lcd.setCursor(0, 0);
-    lcd.print("IF1 enable");
-    lcd.setCursor(0,1);
-    if(modifying == true){
-      if(if1_enable == true){
-        lcd.print(">ON");
+  String text;
+  switch(meniu){
+    //exit
+    case 0:
+      lcd.setCursor(0,0);
+      lcd.print("Exit");
+      break;
+    //step
+    case 1:
+      String text = int64String(step_size);
+      lcd.setCursor(0, 0);
+      lcd.print("Step size");
+      lcd.setCursor(14, 1);
+      lcd.print("Hz");
+      lcd.setCursor(0, 1);
+      if (modifying == true){
+        lcd.print(">" + (text.substring(0, text.length() - 2)));
       }else{
-        lcd.print(">OFF");
+        lcd.print(text.substring(0, text.length() - 2));
       }
-    }else{
-      if(if1_enable == true){
-        lcd.print("ON");
+      break;
+    // mode 
+    case 2:
+      lcd.setCursor(0, 0);
+      lcd.print("Mode");
+      lcd.setCursor(0, 1);
+      if(modifying == true){
+        if(mode ==1){
+          lcd.print(">USB");
+        }
+        if(mode ==2){
+          lcd.print(">LSB");
+        }
+        if(mode ==3){
+          lcd.print(">CW");
+        }
+      }
+      else
+      {
+        if(mode ==1){
+          lcd.print("USB");
+        }
+        if(mode ==2){
+          lcd.print("LSB");
+        }
+        if(mode ==3){
+          lcd.print("CW");
+        }
+      }
+      break;
+    //if1 enable
+    case 3:
+      lcd.setCursor(0, 0);
+      lcd.print("IF1 enable");
+      lcd.setCursor(0,1);
+      if(modifying == true){
+        if(if1_enable == true){
+          lcd.print(">ON");
+        }else{
+          lcd.print(">OFF");
+        }
       }else{
-        lcd.print("OFF");
+        if(if1_enable == true){
+          lcd.print("ON");
+        }else{
+          lcd.print("OFF");
+        }
       }
-    }
-  }//if freq set 
-  if (meniu == 4){
-    String text = int64String(freq_if1);
-    text = proc_string(text);
-    lcd.setCursor(0, 0);
-    lcd.print("IF 1 freq");
-    lcd.setCursor(13, 1);
-    lcd.print("KHz");
-    lcd.setCursor(0, 1);
-    if (modifying == true){
-      lcd.print(">" + text);
-    }else{
-      lcd.print(text);
-    }
-  }
-  if(meniu == 5){
-    String text = int64String(usb_shift);
-    lcd.setCursor(0, 0);
-    lcd.print("USB IF shift");
-    lcd.setCursor(14, 1);
-    lcd.print("Hz");
-    lcd.setCursor(0, 1);
-    if (modifying == true){
-      lcd.print(">" + (text.substring(0, text.length() - 2)));
-    }else{
-      lcd.print(text.substring(0, text.length() - 2));
-    }
-  }
-  if(meniu == 6){
-    String text = int64String(lsb_shift);
-    lcd.setCursor(0, 0);
-    lcd.print("LSB IF shift");
-    lcd.setCursor(14, 1);
-    lcd.print("Hz");
-    lcd.setCursor(0, 1);
-    if (modifying == true){
-      lcd.print(">" + (text.substring(0, text.length() - 2)));
-    }else{
-      lcd.print(text.substring(0, text.length() - 2));
-    }
-  }
-  if(meniu == 7){
-    String text = int64String(cw_shift);
-    lcd.setCursor(0, 0);
-    lcd.print("CW IF shift");
-    lcd.setCursor(14, 1);
-    lcd.print("Hz");
-    lcd.setCursor(0, 1);
-    if (modifying == true){
-      lcd.print(">" + (text.substring(0, text.length() - 2)));
-    }else{
-      lcd.print(text.substring(0, text.length() - 2));
-    }
-  }
-  if (meniu == 8){
-    lcd.setCursor(0, 0);
-    lcd.print("BFO");
-    lcd.setCursor(0, 1);
-    if(modifying == true){
-      if(BFO_state ==0){
-        lcd.print(">OFF");
+      break;
+    //if freq set 
+    case 4:
+      text = int64String(freq_if1);
+      text = proc_string(text);
+      lcd.setCursor(0, 0);
+      lcd.print("IF 1 freq");
+      lcd.setCursor(13, 1);
+      lcd.print("KHz");
+      lcd.setCursor(0, 1);
+      if (modifying == true){
+        lcd.print(">" + text);
+      }else{
+        lcd.print(text);
       }
-      if(BFO_state ==1){
-        lcd.print(">ON");
+      break;
+    case 5:
+      text = int64String(usb_shift);
+      lcd.setCursor(0, 0);
+      lcd.print("USB IF shift");
+      lcd.setCursor(14, 1);
+      lcd.print("Hz");
+      lcd.setCursor(0, 1);
+      if (modifying == true){
+        lcd.print(">" + (text.substring(0, text.length() - 2)));
+      }else{
+        lcd.print(text.substring(0, text.length() - 2));
       }
-      if(BFO_state ==2){
-        lcd.print(">Eqal to if1");
+      break;
+    case 6:
+      text = int64String(lsb_shift);
+      lcd.setCursor(0, 0);
+      lcd.print("LSB IF shift");
+      lcd.setCursor(14, 1);
+      lcd.print("Hz");
+      lcd.setCursor(0, 1);
+      if (modifying == true){
+        lcd.print(">" + (text.substring(0, text.length() - 2)));
+      }else{
+        lcd.print(text.substring(0, text.length() - 2));
       }
-    }
-    else
-    {
-      if(BFO_state==0){
-        lcd.print("OFF");
+      break;
+    case 7:
+      text = int64String(cw_shift);
+      lcd.setCursor(0, 0);
+      lcd.print("CW IF shift");
+      lcd.setCursor(14, 1);
+      lcd.print("Hz");
+      lcd.setCursor(0, 1);
+      if (modifying == true){
+        lcd.print(">" + (text.substring(0, text.length() - 2)));
+      }else{
+        lcd.print(text.substring(0, text.length() - 2));
       }
-      if(BFO_state ==1){
-        lcd.print("ON");
+      break;
+    case 8:
+      lcd.setCursor(0, 0);
+      lcd.print("BFO");
+      lcd.setCursor(0, 1);
+      if(modifying == true){
+        if(BFO_state ==0){
+          lcd.print(">OFF");
+        }
+        if(BFO_state ==1){
+          lcd.print(">ON");
+        }
+        if(BFO_state ==2){
+          lcd.print(">Eqal to if1");
+        }
       }
-      if(BFO_state ==2){
-        lcd.print("Eqal to if1");
+      else
+      {
+        if(BFO_state==0){
+          lcd.print("OFF");
+        }
+        if(BFO_state ==1){
+          lcd.print("ON");
+        }
+        if(BFO_state ==2){
+          lcd.print("Eqal to if1");
+        }
       }
-    }
-  }
-  if (meniu == 9){
-    String text = int64String(BFO_freq);
-    text = proc_string(text);
-    lcd.setCursor(0, 0);
-    lcd.print("BFO freq");
-    lcd.setCursor(13, 1);
-    lcd.print("KHz");
-    lcd.setCursor(0, 1);
-    if (modifying == true){
-      lcd.print(">" + text);
-    }else if(modifying == true && BFO_state == 2){
-      lcd.print("eqal to if");
-    }
-    else{
-      lcd.print(text);
-    }
+      break;
+    case 9:
+      text = int64String(BFO_freq);
+      text = proc_string(text);
+      lcd.setCursor(0, 0);
+      lcd.print("BFO freq");
+      lcd.setCursor(13, 1);
+      lcd.print("KHz");
+      lcd.setCursor(0, 1);
+      if (modifying == true){
+        lcd.print(">" + text);
+      }else if(modifying == true && BFO_state == 2){
+        lcd.print("eqal to if");
+      }
+      else{
+        lcd.print(text);
+      }
+      break;
   }
 }
 
