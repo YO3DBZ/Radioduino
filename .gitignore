@@ -1,3 +1,5 @@
 # ardruino cli exclude
 ~/
+.vscode/
+.gitignore
 
