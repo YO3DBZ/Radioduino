@@ -34,7 +34,9 @@ bool vfo = true ;
 bool modifying = false;
 int meniu = 0;
 int r = 0;
-int meniu_max = 9;
+int meniu_max = 10;
+// 0 for 160m 1 for 80m 2 for 60m 3 for 40m 4 for 30m 5 for 20m 6 for 17m 7 for 15m 8 for 12m 9 for 10m 10 for 6m 11 for 4m 12 for 2m
+int band = 5; 
 String freq_str;
 
 // ai generated to change
@@ -74,7 +76,7 @@ void set_freq(unsigned long long f){
     }
   }
   si5351.set_freq(CLK0, SI5351_CLK0);
-  vfo_update();
+  //vfo_update();
 }
 void ch_freq(bool c){
   unsigned long long CLK0;
@@ -300,6 +302,153 @@ void meniu_update(){
         lcd.print(text);
       }
       break;
+    case 10:{
+      lcd.setCursor(0, 0);
+      lcd.print("Band");
+      lcd.setCursor(0, 1);
+      if(modifying == true){
+        switch (band)
+        {
+          case 0:
+          {
+            lcd.print(">160m");
+            break;
+          }
+          case 1:
+          {
+            lcd.print(">80m");
+            break;
+          }
+          case 2:
+          {
+            lcd.print(">60m");
+            break;
+          }
+          case 3:
+          {
+            lcd.print(">40m");
+            break;
+          }
+          case 4:
+          {
+            lcd.print(">30m");
+            break;
+          }
+          case 5:
+          {
+            lcd.print(">20m");
+            break;
+          }
+          case 6:
+          {
+            lcd.print(">17m");
+            break;
+          }
+          case 7:
+          {
+            lcd.print(">15m");
+            break;
+          }
+          case 8:
+          {
+            lcd.print(">12m");
+            break;
+          }
+          case 9:
+          {
+            lcd.print(">10m");
+            break;
+          }
+          case 10:
+          {
+            lcd.print(">6m");
+            break;
+          }
+          case 11:
+          {
+            lcd.print(">4m");
+            break;
+          }
+          case 12:
+          {
+            lcd.print(">2m");
+            break;
+          }
+        }
+      }
+      else
+      {
+        switch (band)
+        {
+          case 0:
+          {
+            lcd.print("160m");
+            break;
+          }
+          case 1:
+          {
+            lcd.print("80m");
+            break;
+          }
+          case 2:
+          {
+            lcd.print("60m");
+            break;
+          }
+          case 3:
+          {
+            lcd.print("40m");
+            break;
+          }
+          case 4:
+          {
+            lcd.print("30m");
+            break;
+          }
+          case 5:
+          {
+            lcd.print("20m");
+            break;
+          }
+          case 6:
+          {
+            lcd.print("17m");
+            break;
+          }
+          case 7:
+          {
+            lcd.print("15m");
+            break;
+          }
+          case 8:
+          {
+            lcd.print("12m");
+            break;
+          }
+          case 9:
+          {
+            lcd.print("10m");
+            break;
+          }
+          case 10:
+          {
+            lcd.print("6m");
+            break;
+          }
+          case 11:
+          {
+            lcd.print("4m");
+            break;
+          }
+          case 12:
+          {
+            lcd.print("2m");
+            break;
+          }
+        }
+      }
+      break;
+    }
   }
 }
 
@@ -709,6 +858,107 @@ void loop() {
           }
         }
         break;
+      case 10:
+      {
+        if (digitalRead(8)== LOW){
+          while(digitalRead(8)== LOW){
+          }
+          delay(50);
+
+          if(modifying == false){
+            modifying = true;
+          }
+          else
+          {
+            modifying = false;
+          }
+          meniu_update();
+        }
+        if(r!=0 && modifying == true){
+          if (r == 1){
+            band++;
+            if (band >=13){
+              band = 0;
+            }
+          }
+          if (r == 2){
+            band--;
+            if (band < 0 ){
+              band = 12;
+            }
+          }
+          switch (band)
+          {
+            case 0:
+            {
+              set_freq(1800000);
+              break;
+            }
+            case 1:
+            {
+              set_freq(3500000);
+              break;
+            }
+            case 2:
+            {
+              set_freq(5351500);
+              break;
+            }
+            case 3:
+            {
+              set_freq(7000000);
+              break;
+            }
+            case 4:
+            {
+              set_freq(10100000);
+              break;
+            }
+            case 5:
+            {
+              set_freq(14000000);
+              break;
+            }
+            case 6:
+            {
+              set_freq(18068000);
+              break;
+            }
+            case 7:
+            {
+              set_freq(21000000);
+              break;
+            }
+            case 8:
+            {
+              set_freq(24890000);
+              break;
+            }
+            case 9:
+            {
+              set_freq(28000000);
+              break;
+            }
+            case 10:
+            {
+              set_freq(50000000);
+              break;
+            }
+            case 11:
+            {
+              set_freq(70000000);
+              break;
+            }
+            case 12:
+            {
+              set_freq(144000000);
+              break;
+            }
+          }
+          meniu_update();
+        }
+        break;
+      }
     }
   }
   //setting freq limits
