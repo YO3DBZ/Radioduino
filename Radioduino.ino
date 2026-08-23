@@ -59,7 +59,7 @@ String proc_string(String input) {
   return part1 + "." + part2 +"," + part3;
 }
 void set_freq(unsigned long long f){
-  freq = f;
+  freq = f*100ULL;
   unsigned long long CLK0;
   unsigned long long tempIF = freq_if1 + if_shift;
   if (if1_enable == false){
@@ -707,10 +707,10 @@ void loop() {
   }
   //setting freq limits
   if (freq <= 40000000ULL){
-    set_freq(50000000ULL);
+    set_freq(500000ULL);
   }
   if (freq >= 14700000000ULL){
-    set_freq(14600000000ULL);
+    set_freq(146000000ULL);
   }
 }
 
