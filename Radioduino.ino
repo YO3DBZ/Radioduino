@@ -302,7 +302,9 @@ void meniu_update(){
         lcd.print(text);
       }
       break;
-    case 10:{
+    //band
+    case 10:
+    {
       lcd.setCursor(0, 0);
       lcd.print("Band");
       lcd.setCursor(0, 1);
@@ -858,6 +860,7 @@ void loop() {
           }
         }
         break;
+      //band 
       case 10:
       {
         if (digitalRead(8)== LOW){
