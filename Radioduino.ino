@@ -210,6 +210,7 @@ void meniu_update(){
         lcd.print(text);
       }
       break;
+    // USB shit 
     case 5:
       text = int64String(usb_shift);
       lcd.setCursor(0, 0);
@@ -223,6 +224,7 @@ void meniu_update(){
         lcd.print(text.substring(0, text.length() - 2));
       }
       break;
+    // LSB shift
     case 6:
       text = int64String(lsb_shift);
       lcd.setCursor(0, 0);
@@ -236,6 +238,7 @@ void meniu_update(){
         lcd.print(text.substring(0, text.length() - 2));
       }
       break;
+    //cw shift
     case 7:
       text = int64String(cw_shift);
       lcd.setCursor(0, 0);
@@ -249,6 +252,7 @@ void meniu_update(){
         lcd.print(text.substring(0, text.length() - 2));
       }
       break;
+    //bfo on off
     case 8:
       lcd.setCursor(0, 0);
       lcd.print("BFO");
@@ -277,6 +281,7 @@ void meniu_update(){
         }
       }
       break;
+    // bfo freq set
     case 9:
       text = int64String(BFO_freq);
       text = proc_string(text);
