@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "Wire.h"
 #include "si5351.h"
 #include <LiquidCrystal_I2C.h>
@@ -102,7 +103,7 @@ void ch_freq(bool c){
 
 void vfo_update(){
   lcd.clear();
-  freq_str = int64String(freq); 
+  freq_str = int64String(freq, 10); 
   freq_str = proc_string(freq_str);
   lcd.setCursor(0, 0);
   lcd.print(freq_str);
