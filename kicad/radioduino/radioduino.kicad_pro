@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/home/matei/Documents/radioduino/Radioduino/kicad/radioduino/fab_out",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -661,7 +661,7 @@
         "uuid": "03f303e0-a625-4449-a74d-8cd927bea002"
       }
     ],
-    "used_designators": "A1,C1-6,SW1,Y1-2,#PWR1-37,U1-3,Q1-3,JP1-8,R1-12,J1-7,DS1,RV1",
+    "used_designators": "A1,C1-9,SW1,Y1-2,#PWR1-37,U1-3,Q1-3,JP1-8,R1-12,J1-7,DS1,RV1",
     "variants": []
   },
   "sheets": [

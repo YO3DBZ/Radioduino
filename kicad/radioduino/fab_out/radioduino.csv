@@ -1,0 +1,13 @@
+Comment,Designator,Footprint
+100n,"C1, C2, C3, C7, C8, C9",C_0805_2012Metric
+470n,"C4, C5",C_0805_2012Metric
+10u,C6,C_0805_2012Metric
+Conn_01x03_Socket,J1,PinHeader_1x03_P2.54mm_Vertical
+SS8050,Q1,SOT-23
+BSS138,"Q2, Q3",SOT-23
+10K,"R1, R2, R3, R7, R8, R9, R10, R11, R12",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+4.7K,"R4, R5, R6",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+PCF8574AT,U1,SOIC-16W_7.5x10.3mm_P1.27mm
+RT9193-33GB,U2,SOT-23-5_RIT
+~,U3,Crystal_SMD_2016-4Pin_2.0x1.6mm
+Si5351A-B-GT,Y1,MSOP-10_3x3mm_P0.5mm
