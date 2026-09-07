@@ -21,7 +21,7 @@ To build the rest of the receiver, all you need is 2 mixers (one for the first I
 - [ ] Split mode
 - [ ] Rit
 - [ ] Have clk1 90 degrees out of phase from clk0 for direct conversion
-- [ ] Larcset suport with usb and cw shift
+- [x] Larcset suport with usb and cw shift
 - [ ] Better Ui and Ux
 
 ---
