@@ -3,9 +3,6 @@
 #include "si5351.h"
 #include <LiquidCrystal_I2C.h>
 #include <Int64String.h>
-#include "disp_draw.h"
-#include "meniu_logic.h"
-#include "utility.h"
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); // Format -> (Address,Width,Height )
 Si5351 si5351;
@@ -42,6 +39,18 @@ int meniu_max = 10;
 int band = 5; 
 String freq_str;
 
+String proc_string(String input);
+void set_freq(unsigned long long f);
+void ch_freq(bool c);
+void vfo_update();
+void bfo_update();
+int rotate();
+void meniu_update();
+void meniu_logic();
+
+#include "utility.h"
+#include "disp_draw.h"
+#include "meniu_logic.h"
 
 void setup() {
   pinMode (pinC,INPUT_PULLUP);
@@ -118,7 +127,6 @@ void loop() {
     set_freq(146000000ULL);
   }
 }
-
 
 
 

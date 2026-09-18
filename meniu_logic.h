@@ -1,10 +1,10 @@
+#pragma once
+
 #include <Arduino.h>
 #include "Wire.h"
 #include "si5351.h"
 #include <LiquidCrystal_I2C.h>
 #include <Int64String.h>
-#include "disp_draw.h"
-#include "utility.h"
 
 void meniu_logic(){
     switch(meniu){

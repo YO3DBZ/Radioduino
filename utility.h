@@ -1,10 +1,10 @@
+#pragma once
+
 #include <Arduino.h>
 #include "Wire.h"
 #include "si5351.h"
 #include <LiquidCrystal_I2C.h>
 #include <Int64String.h>
-#include "disp_draw.h"
-#include "meniu_logic.h"
 
 // ai generated to change
 // broken when freq <<10 MHz
@@ -136,4 +136,3 @@ int rotate(){
   }
   return rot;
 }
-
