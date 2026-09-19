@@ -420,10 +420,12 @@ void meniu_logic(){
         if (r==1){
           XIT_freq  = XIT_freq  + step_size;
           if (XIT_freq  > 100000000LL) XIT_freq  = 100000000LL; // 1Mhz max
+          if (is_XIT_on == true) freq = freq + step_size;
         }
         if (r==2){
           XIT_freq  = XIT_freq  - step_size;
           if (XIT_freq  < -100000000LL) XIT_freq  = -100000000LL;
+          if (is_XIT_on == true) freq = freq - step_size;
         }
         meniu_update();
       }

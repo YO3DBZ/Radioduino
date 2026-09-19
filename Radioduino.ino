@@ -148,10 +148,12 @@ void loop() {
     if (XIT == true){
       if (on == true){
         freq = freq + XIT_freq;
+        is_XIT_on = true;
       }
       else
       {
         freq = freq - XIT_freq;
+        is_XIT_on = false;
       }
     }
     tx_p_state = tx_sate;
