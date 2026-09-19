@@ -5772,12 +5772,6 @@
 		(uuid "52980248-a2c6-45eb-af98-07c88745d85f")
 	)
 	(junction
-		(at 80.01 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54919816-73ae-4518-82f9-0c7fcc81218b")
-	)
-	(junction
 		(at 186.69 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5806,12 +5800,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76a1fb4e-8730-455c-98b8-4aa32810e69f")
-	)
-	(junction
-		(at 82.55 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a2edb3a-4945-4060-82a7-182e55ab948c")
 	)
 	(junction
 		(at 46.99 99.06)
@@ -5862,6 +5850,12 @@
 		(uuid "bccf548c-e2c4-4de7-a69d-5c6626dd040a")
 	)
 	(junction
+		(at 40.64 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4ecf4d9-503e-44ca-8d4c-7124c4725b6b")
+	)
+	(junction
 		(at 77.47 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5874,10 +5868,10 @@
 		(uuid "cc7e8fbb-a41c-426d-9013-317254a3f52d")
 	)
 	(junction
-		(at 85.09 138.43)
+		(at 26.67 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ce5b2d0c-122a-4fe8-a82d-02260ca3299e")
+		(uuid "ce533578-7124-43a2-be0a-95f6c0683eeb")
 	)
 	(junction
 		(at 283.21 64.77)
@@ -5903,13 +5897,13 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 133.35) (xy 85.09 138.43)
+			(xy 31.75 130.81) (xy 44.45 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "01fbeda0-6d46-48b0-a72c-e49e0cb2b69f")
+		(uuid "02e146c4-8d20-4f4e-8fb2-2bd97cf7654e")
 	)
 	(wire
 		(pts
@@ -5963,7 +5957,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 135.89) (xy 88.9 135.89)
+			(xy 73.66 135.89) (xy 88.9 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5990,6 +5984,16 @@
 			(type default)
 		)
 		(uuid "0afb3243-b95c-4d3f-8468-e60e5f7e319c")
+	)
+	(wire
+		(pts
+			(xy 40.64 73.66) (xy 63.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cbe568d-f8e5-40df-b043-4c78c68079d0")
 	)
 	(wire
 		(pts
@@ -6083,6 +6087,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 71.12) (xy 63.5 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bac7416-617b-49e8-a66f-a8fe38ce7eeb")
+	)
+	(wire
+		(pts
 			(xy 223.52 72.39) (xy 228.6 72.39)
 		)
 		(stroke
@@ -6110,26 +6124,6 @@
 			(type default)
 		)
 		(uuid "1fbed8cd-6e01-4d18-a1ac-ca95b2a063fd")
-	)
-	(wire
-		(pts
-			(xy 82.55 123.19) (xy 85.09 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "208bb362-321e-4e76-be76-afac4c40222f")
-	)
-	(wire
-		(pts
-			(xy 73.66 135.89) (xy 80.01 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "210216c8-8ff4-42c7-8dc4-c5e08d4a2b76")
 	)
 	(wire
 		(pts
@@ -6170,6 +6164,16 @@
 			(type default)
 		)
 		(uuid "24882f69-af69-4625-86b3-cab477019ed8")
+	)
+	(wire
+		(pts
+			(xy 26.67 71.12) (xy 26.67 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2500ec7a-95c4-4410-92fe-c59a85e3404c")
 	)
 	(wire
 		(pts
@@ -6253,16 +6257,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 138.43) (xy 88.9 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fe21840-04d2-4f4d-861f-f32e7d1af171")
-	)
-	(wire
-		(pts
 			(xy 254 69.85) (xy 255.27 69.85)
 		)
 		(stroke
@@ -6310,6 +6304,16 @@
 			(type default)
 		)
 		(uuid "364040be-6848-4396-a991-7c86ac4eb48c")
+	)
+	(wire
+		(pts
+			(xy 31.75 115.57) (xy 31.75 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36feb6ae-b560-41a5-adfe-7bf5c52b2167")
 	)
 	(wire
 		(pts
@@ -6413,16 +6417,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 68.58) (xy 199.39 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43d97999-1330-4db6-a9cd-bef09dbd1b91")
-	)
-	(wire
-		(pts
 			(xy 218.44 22.86) (xy 222.25 22.86)
 		)
 		(stroke
@@ -6490,16 +6484,6 @@
 			(type default)
 		)
 		(uuid "4be0c8c4-30c6-4cd1-a75e-de6d68f7b1bc")
-	)
-	(wire
-		(pts
-			(xy 63.5 71.12) (xy 54.61 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d33a5b8-dc72-4686-95e9-a4c5010e2cea")
 	)
 	(wire
 		(pts
@@ -6573,16 +6557,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 76.2) (xy 54.61 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59e7543c-a0dd-4b83-883b-f32e9abe51c6")
-	)
-	(wire
-		(pts
 			(xy 161.29 137.16) (xy 181.61 137.16)
 		)
 		(stroke
@@ -6613,7 +6587,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 138.43) (xy 85.09 138.43)
+			(xy 73.66 138.43) (xy 88.9 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6670,16 +6644,6 @@
 			(type default)
 		)
 		(uuid "632da88a-0317-404f-8bdf-eaa5afe23966")
-	)
-	(wire
-		(pts
-			(xy 80.01 123.19) (xy 82.55 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63dad6c3-a9bb-4108-a02d-80b924552b14")
 	)
 	(wire
 		(pts
@@ -6763,7 +6727,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 69.85) (xy 228.6 69.85)
+			(xy 203.2 69.85) (xy 228.6 69.85)
 		)
 		(stroke
 			(width 0)
@@ -6923,6 +6887,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 101.6) (xy 40.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b6815f4-6812-45ac-b38a-1c86f8d57bfd")
+	)
+	(wire
+		(pts
 			(xy 76.2 107.95) (xy 76.2 95.25)
 		)
 		(stroke
@@ -6930,6 +6904,16 @@
 			(type default)
 		)
 		(uuid "8b73e940-f94d-41e2-906e-b97b974b194b")
+	)
+	(wire
+		(pts
+			(xy 44.45 76.2) (xy 44.45 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c4ae2a1-83a5-43eb-9f04-1a2057367fac")
 	)
 	(wire
 		(pts
@@ -6983,13 +6967,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 123.19) (xy 80.01 125.73)
+			(xy 31.75 101.6) (xy 40.64 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ffd7e56-c9c3-4702-927a-351f3cdacd11")
+		(uuid "9fc1482f-773e-4279-9913-37ba884be4d8")
 	)
 	(wire
 		(pts
@@ -7120,26 +7104,6 @@
 			(type default)
 		)
 		(uuid "b2d1f6f4-42ed-46b0-9b93-585b023512a0")
-	)
-	(wire
-		(pts
-			(xy 63.5 73.66) (xy 54.61 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3c20835-55c6-4438-8fc1-eaab564aec4f")
-	)
-	(wire
-		(pts
-			(xy 85.09 123.19) (xy 85.09 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b49802b7-a8e9-4a3c-b7eb-e4dd28e2ff9b")
 	)
 	(wire
 		(pts
@@ -7303,7 +7267,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 68.58) (xy 199.39 69.85)
+			(xy 203.2 68.58) (xy 203.2 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7353,6 +7317,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 76.2) (xy 63.5 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1718ceb-ce37-4f37-b3da-5ec24759d8ab")
+	)
+	(wire
+		(pts
 			(xy 60.96 113.03) (xy 54.61 113.03)
 		)
 		(stroke
@@ -7363,6 +7337,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 115.57) (xy 26.67 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e31dbc-b095-487f-a90a-45dfe39a3a98")
+	)
+	(wire
+		(pts
 			(xy 215.9 71.12) (xy 215.9 59.69)
 		)
 		(stroke
@@ -7370,16 +7354,6 @@
 			(type default)
 		)
 		(uuid "e3d8c19a-ed11-4b70-bafb-8caf4c160759")
-	)
-	(wire
-		(pts
-			(xy 80.01 133.35) (xy 80.01 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e49c71e5-059c-4ec1-99a4-de3ba6695659")
 	)
 	(wire
 		(pts
@@ -8939,6 +8913,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 40.64 109.22 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18384f7e-3a62-407b-8aeb-0559dd371cbf")
+		(property "Reference" "#PWR042"
+			(at 40.64 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 40.64 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 40.64 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "193d2792-9b88-4b8c-937a-50c22a24741f")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 60.96 142.24 0)
 		(unit 1)
@@ -9095,6 +9147,84 @@
 			(project "radioduino"
 				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
 					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 26.67 130.81 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2111a0d3-0d6e-467e-b633-2f82393fa74a")
+		(property "Reference" "#PWR045"
+			(at 20.32 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8c88c3d-36e3-41b3-bad8-21efad1ab1a6")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -9817,6 +9947,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 21.59 123.19 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40f04703-efe1-4c28-996e-9ee2c8f4cc6b")
+		(property "Reference" "#PWR047"
+			(at 15.24 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 17.78 123.1899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 21.59 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e81689d6-eb6b-486c-a797-021ffbc125b9")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 247.65 46.99 90)
 		(unit 1)
@@ -9891,6 +10100,254 @@
 			(project "radioduino"
 				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 19.05 109.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48761ddf-37f3-4ee5-ae1b-7a8cf8ac9078")
+		(property "Reference" "#PWR043"
+			(at 22.86 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 13.97 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 19.05 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 19.05 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 19.05 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd2345ac-03c9-4aa4-86eb-9b65b761a8eb")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 29.21 123.19 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a788c8a-bd71-497c-86af-86e32ef88f5e")
+		(property "Reference" "SW2"
+			(at 39.37 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 36.83 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 33.274 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 13.97 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "S2"
+			(uuid "1e7f85f2-6bbe-4ed1-aa6f-d72d25f6290e")
+		)
+		(pin "MP"
+			(uuid "8d4e8ad1-d1ad-4099-8a09-327aa82c1d9c")
+		)
+		(pin "S1"
+			(uuid "8cc5df03-3b84-4515-8a49-0d05192d17a1")
+		)
+		(pin "A"
+			(uuid "970df771-9d4a-49ea-86cb-b2499dba5d3c")
+		)
+		(pin "B"
+			(uuid "4fc84798-4d1e-496d-b420-8379982fcb6b")
+		)
+		(pin "C"
+			(uuid "abfdd807-aeb0-4d15-84cc-89c35779bb94")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b9b54fd-f7de-4c4d-9090-b8591e92609f")
+		(property "Reference" "#PWR046"
+			(at 68.58 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc25b217-910f-4dae-903d-cc91a8bcd0e2")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10159,88 +10616,6 @@
 			(project "radioduino"
 				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
 					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 80.01 129.54 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "54f886e6-7d1a-47db-90f4-6b6d42ed7fed")
-		(property "Reference" "R5"
-			(at 77.47 128.2699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7K"
-			(at 77.47 130.8099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 81.788 129.54 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 80.01 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e5502b30-7cc0-407c-93c9-dfac29e8c143")
-		)
-		(pin "1"
-			(uuid "703cd75d-335b-4fe5-91ee-c977a802898c")
-		)
-		(instances
-			(project "radioduino"
-				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -12003,84 +12378,6 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 82.55 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cc0cd5d-d9b3-4333-ac96-e68ec2b6f90f")
-		(property "Reference" "#PWR06"
-			(at 82.55 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 82.55 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c51497b9-3e42-484e-99d9-a488be166dec")
-		)
-		(instances
-			(project "radioduino"
-				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
 		(at 54.61 99.06 270)
 		(unit 1)
 		(body_style 1)
@@ -12636,7 +12933,8 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSS138")
-		(at 210.82 77.47 270)
+		(at 210.82 77.47 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12644,7 +12942,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a88ed39b-c649-4e8b-b859-2b75bb2d062e")
 		(property "Reference" "Q3"
 			(at 210.82 86.36 90)
@@ -12667,7 +12964,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 208.915 82.55 0)
+			(at 212.725 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12680,7 +12977,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
-			(at 207.01 82.55 0)
+			(at 214.63 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14183,7 +14480,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 85.09 129.54 0)
+		(at 40.64 105.41 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14191,10 +14489,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4f58f3b-0951-4125-a812-21f350ad2482")
-		(property "Reference" "R4"
-			(at 87.63 128.2699 0)
+		(uuid "d526d15c-1425-46cd-8ac8-5a991f53e6d9")
+		(property "Reference" "R13"
+			(at 38.1 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14204,8 +14501,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7K"
-			(at 87.63 130.8099 0)
+		(property "Value" "10K"
+			(at 38.1 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14216,7 +14513,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 83.312 129.54 90)
+			(at 42.418 105.41 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14227,7 +14524,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 129.54 0)
+			(at 40.64 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14238,7 +14535,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 85.09 129.54 0)
+			(at 40.64 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14249,15 +14546,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "79a705e0-8c86-499b-9147-7c85fa1d5851")
+			(uuid "8f4311f6-5575-4d9d-9c0c-f4c945b9ea05")
 		)
 		(pin "1"
-			(uuid "d3223cc2-b0f4-487e-976e-9e1a255a794b")
+			(uuid "8a2c3d19-2d53-451c-8164-6a099de11972")
 		)
 		(instances
 			(project "radioduino"
 				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
-					(reference "R4")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -14679,6 +14976,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 29.21 115.57 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dfd5e520-de8f-432d-97dd-46265865ea73")
+		(property "Reference" "#PWR044"
+			(at 29.21 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 29.2101 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 29.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c4507af-86a0-4d7b-a50c-f56d419d413c")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 222.25 27.94 0)
 		(unit 1)
@@ -14839,6 +15215,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 22.86 109.22 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e3c1d2e3-1613-468e-a778-681fa0d3600a")
+		(property "Reference" "R14"
+			(at 24.1301 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 21.5901 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 22.86 110.998 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 22.86 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d9f0452d-e0f1-4db5-9889-2f99779e0d32")
+		)
+		(pin "1"
+			(uuid "2f699fab-0746-4099-b98d-6593645072de")
+		)
+		(instances
+			(project "radioduino"
+				(path "/03f303e0-a625-4449-a74d-8cd927bea002"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "radioduino:1XXD32000MBA")
 		(at 186.69 31.75 0)
 		(unit 1)
@@ -14926,7 +15384,8 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:BSS138")
-		(at 198.12 66.04 270)
+		(at 198.12 66.04 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14934,7 +15393,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e3cc4541-56c2-4a95-b169-811c7e32e208")
 		(property "Reference" "Q2"
 			(at 198.12 74.93 90)
@@ -14957,7 +15415,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 196.215 71.12 0)
+			(at 200.025 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14970,7 +15428,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
-			(at 194.31 71.12 0)
+			(at 201.93 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
