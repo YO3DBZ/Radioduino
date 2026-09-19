@@ -15,11 +15,11 @@ To build the rest of the receiver, all you need is 2 mixers (one for the first I
 - [ ] Save the settings to EEPROM
 - [ ] Add a way to change band pass filters / pull some pins high depending on the modulation
 - [ ] Add CAT control
-- [ ] Maybe TX?
+- [x] Maybe TX?
 - [ ] S-meter support
 - [ ] Write some documentation so that this project could be usable by someone else
-- [ ] Split mode
-- [ ] Rit
+- [x] Split mode(using rit&xit)
+- [x] Rit
 - [ ] Have clk1 90 degrees out of phase from clk0 for direct conversion
 - [x] Larcset suport with usb and cw shift
 - [ ] Better Ui and Ux
