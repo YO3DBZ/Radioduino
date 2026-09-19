@@ -330,5 +330,47 @@ void meniu_update(){
       }
       break;
     }
+    case(11):
+    {
+      if (XIT_freq  < 0) {
+        text = "-" + int64String((uint64_t)(-XIT_freq ));
+      } else {
+        text = int64String((uint64_t)XIT_freq );
+      }
+    
+      lcd.setCursor(0, 0);
+      lcd.print("XIT");
+      lcd.setCursor(14, 1);
+      lcd.print("Hz");
+      lcd.setCursor(0, 1);
+    
+      if (modifying == true) {
+        lcd.print(">" + text.substring(0, text.length() - 2));
+      } else {
+        lcd.print(text.substring(0, text.length() - 2));
+      }
+    
+      break;
+    }
+    case 12:
+    {
+      lcd.setCursor(0, 0);
+      lcd.print("XIT");
+      lcd.setCursor(0,1);
+      if(modifying == true){
+        if(XIT == true){
+          lcd.print(">ON");
+        }else{
+          lcd.print(">OFF");
+        }
+      }else{
+        if(XIT == true){
+          lcd.print("ON");
+        }else{
+          lcd.print("OFF");
+        }
+      }
+      break;
+    }
   }
 }
