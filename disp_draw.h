@@ -372,5 +372,47 @@ void meniu_update(){
       }
       break;
     }
+    case(13):
+    {
+      if (RIT_freq  < 0) {
+        text = "-" + int64String((uint64_t)(-RIT_freq ));
+      } else {
+        text = int64String((uint64_t)RIT_freq );
+      }
+    
+      lcd.setCursor(0, 0);
+      lcd.print("RIT");
+      lcd.setCursor(14, 1);
+      lcd.print("Hz");
+      lcd.setCursor(0, 1);
+    
+      if (modifying == true) {
+        lcd.print(">" + text.substring(0, text.length() - 2));
+      } else {
+        lcd.print(text.substring(0, text.length() - 2));
+      }
+    
+      break;
+    }
+    case 14:
+    {
+      lcd.setCursor(0, 0);
+      lcd.print("RIT");
+      lcd.setCursor(0,1);
+      if(modifying == true){
+        if(RIT == true){
+          lcd.print(">ON");
+        }else{
+          lcd.print(">OFF");
+        }
+      }else{
+        if(RIT == true){
+          lcd.print("ON");
+        }else{
+          lcd.print("OFF");
+        }
+      }
+      break;
+    }
   }
 }

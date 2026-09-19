@@ -45,6 +45,21 @@ void set_freq(unsigned long long f){
   si5351.set_freq(CLK0, SI5351_CLK0);
   //vfo_update();
 }
+void update_freq(){
+  unsigned long long CLK0;
+  unsigned long long tempIF = freq_if1 + if_shift;
+  if (if1_enable == false){
+    CLK0 = freq;
+  }
+  if(if1_enable == true){
+    if(tempIF  <= freq){
+      CLK0 = freq - tempIF ;
+    }else{
+      CLK0 = tempIF  - freq;
+    }
+  }
+  si5351.set_freq(CLK0, SI5351_CLK0);
+}
 void ch_freq(bool c){
   unsigned long long CLK0;
   unsigned long long tempIF = freq_if1 + if_shift;
@@ -54,7 +69,6 @@ void ch_freq(bool c){
   if (c == true){
     freq = freq + step_size;
   }
-
   if (if1_enable == false){
     CLK0 = freq;
   }

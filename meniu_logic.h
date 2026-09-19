@@ -427,6 +427,7 @@ void meniu_logic(){
           if (XIT_freq  < -100000000LL) XIT_freq  = -100000000LL;
           if (is_XIT_on == true) freq = freq - step_size;
         }
+        update_freq();
         meniu_update();
       }
       break;
@@ -464,11 +465,85 @@ void meniu_logic(){
            XIT = false;
           }
         }
-        ch_freq(true);
-        ch_freq(false);
+        update_freq();
         meniu_update();
       }
       break;
     }
+    
+    case(13):
+    {
+      is_RIT_on = RIT && !tx_sate;
+      if (digitalRead(8)== LOW){
+        while(digitalRead(8)== LOW){
+        }
+        delay(50);
+        if(modifying == false){
+          modifying = true;
+        }
+        else{
+          modifying = false;
+        }
+        meniu_update();
+      }
+      if (r !=0 && modifying == true){
+        if (r==1){
+          RIT_freq  = RIT_freq  + step_size;
+          if (RIT_freq  > 100000000LL) RIT_freq = 100000000LL; // 1Mhz max
+          if (is_RIT_on == true) freq = freq + step_size;
+        }
+        if (r==2){
+          RIT_freq  = RIT_freq  - step_size;
+          if (RIT_freq  < -100000000LL) RIT_freq = -100000000LL;
+          if (is_RIT_on == true) freq = freq - step_size;
+        }
+        update_freq();
+        meniu_update();
+      }
+      break;
+    }
+    case 14:
+    {
+      if (digitalRead(8)== LOW){
+        while(digitalRead(8)== LOW){
+        }
+        delay(50);
+        if(modifying == false){
+          modifying = true;
+        }
+        else
+        {
+          modifying = false;
+        }
+        meniu_update();
+      }
+      if(modifying== true && r!=0){
+        if(r == 1){
+          if(RIT == false){
+            RIT= true;
+            freq = freq + RIT_freq;
+          }
+          else
+          {
+            RIT = false;
+            freq = freq - RIT_freq;
+          }
+        }else{
+          if(RIT == false){
+            RIT= true;
+            freq = freq + RIT_freq;
+          }
+          else
+          {
+            RIT = false;
+            freq = freq - RIT_freq;
+          }
+        }
+        update_freq();
+        meniu_update();
+      }
+      break;
+    }
+
   }
 }

@@ -35,12 +35,15 @@ int ptt_pin = 2;
 long long XIT_freq = 0;
 bool XIT = false;
 bool is_XIT_on = false;
+long long RIT_freq = 0;
+bool RIT = false;
+bool is_RIT_on = false;
 
 bool vfo = true ;
 bool modifying = false;
 int meniu = 0;
 int r = 0;
-int meniu_max = 12;
+int meniu_max = 14;
 // 0 for 160m 1 for 80m 2 for 60m 3 for 40m 4 for 30m 5 for 20m 6 for 17m 7 for 15m 8 for 12m 9 for 10m 10 for 6m 11 for 4m 12 for 2m
 int band = 5; 
 String freq_str;
@@ -136,6 +139,7 @@ void loop() {
   if (freq >= 14700000000ULL){
     set_freq(146000000ULL);
   }
+
   if (tx_sate != tx_p_state){
     bool on;
     if (tx_sate == HIGH && tx_p_state == LOW) {
@@ -156,54 +160,16 @@ void loop() {
         is_XIT_on = false;
       }
     }
+    if (RIT == true){
+      if( on == true){
+        freq = freq - RIT_freq;
+      }
+      if ( on == false){
+        freq = freq + RIT_freq;
+      }
+    }
     tx_p_state = tx_sate;
     vfo_update();
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
